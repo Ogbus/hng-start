@@ -6,7 +6,6 @@
     <title>CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="owaji-inyagham.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <div class="main-div">
@@ -84,9 +83,53 @@
                     <ul>
                         <li>Marine Engineering</li>
                     </ul>
-                </div>
+                </div><hr>
+                <div id="error"></div>
+                <form onsubmit="return validate()" id="form" action="example.html" method="GET">
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="fname" minlength="4" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Your email address">
+                    </div>
+                    <div>
+                        <label for="select">Select Title</label>
+                        <select name="title" id="title">
+                            <option value="select">Select Your Title</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="mr">Mr</option>
+                            <option value="master">Master</option>
+                            <option value="engr">Engr</option>
+                            <option value="dr">Dr</option>
+                            <option value="barr">Barr</option>
+                        </select>
+                    </div>
+                    <div> 
+                        <textarea name="text" id="message" cols="20" rows="5" minlength="20" placeholder="Write something"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+    <script>
+        // Validating form tag
+        function validate() {
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const textarea = document.getElementById("message");
+
+            if(name.value.trim() === "" || password.value.trim() === "" || textarea.value.trim() === "") {
+                alert("No blank form is allowed");
+                return false;
+            } else {
+                true;
+            }
+        }
+    </script>
 </body>
 </html>
