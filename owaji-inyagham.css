@@ -82,3 +82,34 @@ a:hover {
 .skills, h2 {
     margin-top: 20px;
 }
+
+/* FORM STYLING */
+#form {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#name {
+    width: 50%;
+    padding: 6px;
+    display: -webkit-box;
+    margin-bottom: 8px;
+}
+
+#email {
+    width: 50%;
+    padding: 6px;
+    display: -webkit-box;
+    margin-bottom: 8px;
+}
+
+#title {
+    width: 50%;
+    padding: 6px;
+    display: -webkit-box;
+    margin-bottom: 8px;
+}
+
+#message {
+    width: 50%;
+}
