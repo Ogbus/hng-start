@@ -122,7 +122,8 @@
             const name = document.getElementById("name");
             const email = document.getElementById("email");
             const textarea = document.getElementById("message");
-
+            
+            // Using conditioners to validate the form
             if(name.value.trim() === "" || password.value.trim() === "" || textarea.value.trim() === "") {
                 alert("No blank form is allowed");
                 return false;
